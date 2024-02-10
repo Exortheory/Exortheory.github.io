@@ -17,6 +17,37 @@
     --example-variable: 666px;
 }
 
+body {
+    background-color: #111;
+}
+
+.background-border {
+    height: 50px;
+    width: 310px;
+    background: linear-gradient(to bottom, rgba(50,50,50,1), rgba(20,20,20,1));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.background {
+    height: 40px;
+    width: 300px;
+    background: linear-gradient(to bottom, rgba(20,20,20,1), rgba(50,50,50,1));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 20px;
+}
+
 p {
+    text-align: center;
+    color: rgba(200,200,200,1);
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
