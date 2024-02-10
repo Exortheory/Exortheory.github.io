@@ -16,3 +16,7 @@
 :root {
     --example-variable: 666px;
 }
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
