@@ -1,0 +1,18 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Fira Code', monospace; */
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font-family: 'Dosis', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+/* to use variables: use var(--example-variable) */
+
+:root {
+    --example-variable: 666px;
+}
