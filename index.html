@@ -4,15 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work in progress</title>
+    <title>Vilin ja Sulon Piilopaikka</title>
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
-    <div class="background-border">
-        <div class="background">
-            <p>Work in Progress - Current: Unknown</p>
+    <div class="grid-container">
+        <div class="header">
+            <div>
+                <img src="images/piilopaikka_topbanner.png" alt="Piilopaikka">
+            </div>
         </div>
+        <div class="nav">
+            <ul>
+                <li><a onclick="openTab('page-home')" href="#home">Home</a></li>
+                <li><a onclick="openTab('page-1')" href="#page1">Vili</a></li>
+                <li><a onclick="openTab('page-2')" href="#page2">Sulo</a></li>
+                <li><a onclick="openTab('page-3')" href="#page3">Kuvia</a></li>
+                <li style="float:right"><a onclick="openTab('page-4')" href="#info">Info</a></li>
+            </ul>
+        </div>
+        <div class="left"></div>
+        <div class="content">
+            <div id="page-home" class="tab-content">
+                <div class="content-window"></div>
+                    <p>
+                        Frontpage / Home<br><br>
+                        Work in progress / not final
+                    </p>
+            </div>
+            <div id="page-1" class="tab-content" style="display:none">
+                    <p>Vili</p>
+                    <div class="content-window"></div>
+            </div>
+            <div id="page-2" class="tab-content" style="display:none">
+                    <p>Sulo</p>
+                    <div class="content-window"></div>
+            </div>
+            <div id="page-3" class="tab-content" style="display:none">
+                    <div class="content-window">
+                        <div class="image-frames">
+                            <a href="#"><img class="image-00 image-01" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-02" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-03" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-04" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-05" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-06" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-07" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-08" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-09" src="#" alt="404"></a>
+                            <a href="#"><img class="image-00 image-10" src="#" alt="404"></a>
+                        </div>
+                    </div>
+            </div>
+            <div id="page-4" class="tab-content" style="display:none">
+                    <p>Site info / About</p>
+                    <div class="content-window"></div>
+            </div>
+        </div>
+        <div class="right"></div>
+        <div class="footer"><p>@ 2024</p></div>
     </div>
 </body>
 </html>
