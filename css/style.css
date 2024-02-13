@@ -62,19 +62,17 @@ button:hover {
   grid-row-gap: 0;
   grid-column-gap: 0;
   position: absolute;
-  border-radius: 1em;
   margin: 0 auto;
   background-color: var(--color-background);
-  top: 0.5em;
-  left: 0.5em;
-  right: 0.5em;
-  bottom: 0.5em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: auto;
 }
 .container .corner-top-left {
   grid-area: corner-top-left;
   background-color: var(--color-background2);
-  border-top-left-radius: 1em;
   -webkit-clip-path: circle(100% at 100% 21%);
           clip-path: circle(100% at 100% 21%);
 }
@@ -95,7 +93,6 @@ button:hover {
 .container .corner-top-right {
   grid-area: corner-top-right;
   background-color: var(--color-background2);
-  border-top-right-radius: 1em;
   -webkit-clip-path: circle(100% at 0% 21%);
           clip-path: circle(100% at 0% 21%);
 }
@@ -146,7 +143,6 @@ button:hover {
 }
 .container .corner-bottom-left {
   grid-area: corner-bottom-left;
-  border-bottom-left-radius: 1em;
   background-color: var(--color-background2);
   -webkit-clip-path: circle(100% at 100% 79%);
           clip-path: circle(100% at 100% 79%);
@@ -158,7 +154,6 @@ button:hover {
 .container .corner-bottom-right {
   grid-area: corner-bottom-right;
   background-color: var(--color-background2);
-  border-bottom-right-radius: 1em;
   -webkit-clip-path: circle(100% at 0% 79%);
           clip-path: circle(100% at 0% 79%);
 }
@@ -194,8 +189,6 @@ button:hover {
     height: 40px;
   }
   .container .navtop .home {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
     border-bottom-left-radius: 0;
   }
   .container .navtop .about {
@@ -217,10 +210,7 @@ button:hover {
     -webkit-clip-path: none;
             clip-path: none;
   }
-  .container .footer {
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-  }
+  
   .container .corner-bottom-right {
     -webkit-clip-path: none;
             clip-path: none;
