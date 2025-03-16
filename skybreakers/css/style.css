@@ -1,0 +1,344 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Fira Code', monospace; */
+/* font-family: 'Bebas Neue', sans-serif; */
+/* font-family: 'Dosis', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+/* to use variables: use var(--example-variable) */
+
+:root {
+    --example-variable: 666px;
+
+    --wrapper-size: 800px;
+}
+
+* {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    min-height: 100vh;
+    background: url(../images/bg.jpg) no-repeat;
+    background: #000;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: #eeeeee;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#660100, #99000b);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 30px;
+    color: #fff;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    padding: 20px;
+    color: #eee;
+    display: block;
+}
+
+header .navbar ul li:hover > a {
+    background: linear-gradient(#333333, #660100);
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #ffffff;
+    display: none;
+    border-radius: 20px;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .navbar ul li ul li a {
+    color: #333;
+}
+
+header .navbar ul li ul li:hover > a{
+    background: linear-gradient(#333333, #660100);
+    color: #ffffff;
+    border-radius: 0;
+}
+
+header .navbar ul li ul li:first-child:hover > a{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+header .navbar ul li ul li:last-child:hover > a{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header .navbar ul li ul li:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333333;
+    cursor: pointer;
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: absolute;
+    top: 100px;
+    max-inline-size: var(--wrapper-size);
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 60px;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+
+    h2 {
+        padding: 10px 0;
+    }
+}
+
+.wrapper > h2 {
+    padding: 40px;
+}
+
+.wrapper section {
+    position: relative;
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+
+    h2:before {
+        left: 0;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 7px;
+        content: "";
+        background: #444;
+    }
+
+    h2:after {
+        left: 0;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 3px;
+        margin-top: 7px;
+        content: "";
+        background: #444;
+    }
+
+    .imgBox {
+        max-width: 205px;
+        flex: 0 0 205px;
+        padding-bottom: 20px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .textBox {
+        margin: 0 20px 20px 20px;
+    }
+}
+
+.bottom-images img {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #333;
+    color: #999;
+    padding: 10px;
+    font-size: small;
+
+
+    p:first-child {
+        font-size: 18px;
+        font-weight: bold;
+        color: #666;
+    }
+}
+
+@media(max-width: 991px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li a {
+        color: #333;
+    }
+
+    header .navbar ul li a:hover {
+        border-radius: 0;
+    }
+
+    header .navbar ul li:hover > a {
+        border-radius: 0;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: #ccc;
+    }
+
+    header .navbar ul li ul li:first-child:hover > a{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    
+    header .navbar ul li ul li:last-child:hover > a{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+    .wrapper {
+        top: 70px;
+    }
+
+    wrapper > h2 {
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .wrapper section {
+        flex-direction: column;
+
+        .imgBox {
+            max-width: 100%;
+        }
+    }
+}
