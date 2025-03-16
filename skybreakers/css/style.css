@@ -23,10 +23,7 @@
     text-decoration: none;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
+
 
 body {
     min-height: 100vh;
@@ -43,7 +40,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(#660100, #99000b);
+    background: linear-gradient(#550000, #880000);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
     padding: 20px 7%;
     display: flex;
@@ -56,6 +53,10 @@ header .logo {
     font-weight: bolder;
     font-size: 30px;
     color: #fff;
+}
+
+header img {
+    width: 26px;
 }
 
 header .navbar ul {
@@ -75,9 +76,10 @@ header .navbar ul li a {
 }
 
 header .navbar ul li:hover > a {
-    background: linear-gradient(#333333, #660100);
+    background: linear-gradient(#333333, #550000);
     color: #ffffff;
-    border-radius: 20px;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 0 10px #000;
 }
 
 header .navbar ul li ul {
@@ -134,7 +136,7 @@ header .navbar ul li:hover > ul {
 
 header label {
     font-size: 20px;
-    color: #333333;
+    color: #eee;
     cursor: pointer;
     display: none;
 }
@@ -172,6 +174,11 @@ main {
     display: flex;
     justify-content: center;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     h2:before {
         left: 0;
         display: block;
@@ -206,6 +213,10 @@ main {
 
     .textBox {
         margin: 0 20px 20px 20px;
+
+        p {
+            padding-bottom: 20px;
+        }
     }
 }
 
@@ -244,7 +255,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #333;
+    background: linear-gradient(#222, #333);
     color: #999;
     padding: 10px;
     font-size: small;
