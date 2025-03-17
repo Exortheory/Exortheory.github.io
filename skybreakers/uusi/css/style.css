@@ -59,6 +59,7 @@ header .logo {
 }
 
 header img {
+    outline: none;
     width: 26px;
     opacity: 50%;
 }
