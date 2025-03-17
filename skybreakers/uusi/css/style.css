@@ -17,7 +17,10 @@
     text-decoration: none;
 }
 
-
+img {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
 
 body {
     min-height: 100vh;
@@ -209,10 +212,10 @@ main {
     .imgBox {
         max-width: 205px;
         flex: 0 0 205px;
-        padding-bottom: 20px;
 
         img {
             max-width: 100%;
+            margin-bottom: 20px;
         }
     }
 
@@ -229,6 +232,7 @@ main {
     
         ul {
             padding-left: 20px;
+            padding-bottom: 20px;
         }
     }
 }
