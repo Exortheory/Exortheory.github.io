@@ -1,18 +1,80 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* font-family: 'Roboto', sans-serif; */
-/* font-family: 'Fira Code', monospace; */
-/* font-family: 'Bebas Neue', sans-serif; */
-/* font-family: 'Dosis', sans-serif; */
-/* font-family: 'Raleway', sans-serif; */
 
 /* to use variables: use var(--example-variable) */
 
 :root {
     --example-variable: 666px;
+}
+
+* {
+    text-decoration: none;
+    
+}
+
+body {
+    min-height: 100vh;
+    background: url(../images/bg.jpg) no-repeat;
+    background: #000;
+    background-size: cover;
+    background-position: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .button-new {
+        color: #eeeeee;
+        background: #660000;
+        border-radius: 15px;
+        padding: 10px 20px 10px 20px;
+        border: 3px solid #990000;
+    }
+
+    .button-old {
+        color: #eeeeee;
+        background: #330000;
+        border-radius: 15px;
+        padding: 10px 20px 10px 20px;
+        border: 3px solid #660000;
+        opacity: 60%;
+    }
+
+    .button-new:hover {
+        background: #990000;
+    }
+
+    .button-old:hover {
+        background: #660000;
+        opacity: 100%;
+    }
+
+    .button p:first-child {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    img {
+        width: 300px;
+        height: auto;
+        padding: 20px;
+    }
 }
