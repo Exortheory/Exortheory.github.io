@@ -56,6 +56,7 @@ header .logo {
     font-style: normal;
     font-size: 26px;
     color: #fff;
+    text-shadow: 2px 2px 0 #000;
 }
 
 header img {
@@ -160,37 +161,18 @@ main {
 
 .wrapper {
     position: absolute;
-    top: 100px;
+    top: 63px;
     max-inline-size: var(--wrapper-size);
     margin-inline: auto;
     padding-inline: 1rem;
-    padding-top: 1rem;
     padding-bottom: 60px;
-
-    h2 {
-        padding: 10px 0;
-    }
 }
 
-.wrapper > h2 {
-    padding: 40px;
-    text-align: center;
-}
+.wrapper h1 {
+    padding: 40px 10px 20px 10px;
+    font-size: 20px;
 
-.wrapper section {
-    position: relative;
-    max-width: 100%;
-    margin: 10px;
-    padding: 15px;
-    display: flex;
-    justify-content: left;
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-
-    h2:before {
+    &::before {
         left: 0;
         display: block;
         position: relative;
@@ -201,7 +183,48 @@ main {
         background: #444;
     }
 
-    h2:after {
+    &::after {
+        left: 0;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 3px;
+        margin-top: 7px;
+        content: "";
+        background: #444;
+    }
+}
+
+.wrapper > h2 {
+    padding: 40px 10px 20px 10px;
+    text-align: center;
+}
+
+.wrapper section {
+    position: relative;
+    max-width: 100%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h2::before {
+        left: 0;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 7px;
+        content: "";
+        background: #444;
+    }
+
+    h2::after {
         left: 0;
         display: block;
         position: relative;
@@ -218,7 +241,6 @@ main {
 
         img {
             max-width: 100%;
-            margin-bottom: 20px;
         }
     }
 
@@ -227,6 +249,11 @@ main {
 
         p {
             padding-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            padding: 10px 0;
         }
             
         h3 {
