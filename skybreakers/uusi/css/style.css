@@ -165,7 +165,7 @@ main {
     max-inline-size: var(--wrapper-size);
     margin-inline: auto;
     padding-inline: 1rem;
-    padding-bottom: 60px;
+    padding-bottom: 56px;
 }
 
 .wrapper h1 {
@@ -211,6 +211,7 @@ main {
     img {
         width: 100%;
         height: auto;
+        border-radius: 10px;
     }
 
     h2::before {
@@ -245,6 +246,7 @@ main {
     }
 
     .textBox {
+        width: 100%;
         margin: 10px 20px 10px 20px;
 
         p {

@@ -2,27 +2,46 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-  }
-  * {
+}
+
+* {
     margin: 0;
     padding: 0;
     min-width: 0;
     box-sizing: border-box;
-  }
-  body {
+}
+
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
+}
+
+header, footer, main, section, article {
+  container-type: inline-size;
+}
+
+img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  }
-  input, button, textarea, select {
+}
+
+input, button, textarea, select {
     font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-  }
-  #root, #__next {
+}
+
+p, li, figcaption {
+    text-wrap: pretty;
+    max-width: 65ch;
+}
+
+#root, #__next {
     isolation: isolate;
-  }
+}
