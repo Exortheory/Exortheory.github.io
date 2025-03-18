@@ -59,16 +59,6 @@ header .logo {
     text-shadow: 2px 2px 0 #000;
 }
 
-header img {
-    outline: none;
-    width: 26px;
-    opacity: 50%;
-}
-
-header img:hover {
-    opacity: 100%;
-}
-
 header .navbar ul {
     list-style: none;
 }
@@ -144,11 +134,28 @@ header .navbar ul li:hover > ul {
     display: none;
 }
 
+header .flag {
+    img {
+        outline: none;
+        width: 26px;
+        opacity: 50%;
+    }
+        
+    img:hover {
+        opacity: 100%;
+    }
+}
+
 header label {
     font-size: 20px;
     color: #eee;
     cursor: pointer;
     display: none;
+
+    img {
+        outline: none;
+        width: 30px;
+    }
 }
 
 /* END OF NAV + START OF CONTENT */
