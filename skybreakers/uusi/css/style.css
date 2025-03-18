@@ -17,11 +17,6 @@
     text-decoration: none;
 }
 
-img {
-    outline: 1px solid white;
-    outline-offset: -1px;
-}
-
 body {
     min-height: 100vh;
     background: url(../images/bg.jpg) no-repeat;
@@ -249,6 +244,8 @@ main {
 
         img {
             max-width: 100%;
+            outline: 1px solid white;
+            outline-offset: -1px;
         }
     }
 
