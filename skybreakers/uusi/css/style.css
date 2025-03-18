@@ -95,22 +95,22 @@ header .navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
-    background: #ffffff;
+    background: linear-gradient(#111, #333);
     display: none;
     border-radius: 20px;
 }
 
 header .navbar ul li ul li {
     width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
 }
 
 header .navbar ul li ul li a {
-    color: #333;
+    color: #eee;
 }
 
 header .navbar ul li ul li:hover > a{
-    background: linear-gradient(#333, #333);
+    background: linear-gradient(#333, #111);
     color: #ffffff;
     border-radius: 0;
 }
@@ -149,6 +149,8 @@ header label {
     cursor: pointer;
     display: none;
 }
+
+/* END OF NAV + START OF CONTENT */
 
 main {
     display: flex;
@@ -305,17 +307,18 @@ footer {
         top: 70px;
         left: 0;
         right: 0;
-        background: #ffffff;
+        background: #000;
         border-top: 1px solid rgba(0, 0, 0, .1);
         display: none;
     }
 
     header .navbar ul li {
         width: 100%;
+        background: linear-gradient(#222, #111);
     }
 
     header .navbar ul li a {
-        color: #333;
+        color: #ccc;
     }
 
     header .navbar ul li a:hover {
@@ -332,7 +335,7 @@ footer {
     }
 
     header .navbar ul li ul li {
-        background: #ccc;
+        background: #333;
     }
 
     header .navbar ul li ul li:first-child:hover > a{
