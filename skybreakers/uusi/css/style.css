@@ -371,12 +371,10 @@ main {
         outline: 1px solid #fff;
         outline-offset: -1px;
         border-radius: 10px;
-        opacity: 80%;
     }
 
     img:hover {
-        background: #333;
-        opacity: 100%;
+        filter: brightness(120%);
     }
 
     .photoArea {
@@ -394,12 +392,10 @@ main {
             outline: 1px solid #666;
             outline-offset: -1px;
             border-radius: 10px;
-            opacity: 80%;
         }
 
         img:hover {
-            background: #333;
-            opacity: 100%;
+            filter: brightness(120%);
         }
 
         p {
