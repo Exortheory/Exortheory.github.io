@@ -368,10 +368,44 @@ main {
         width: 165px;
         height: 165px;
         object-fit: cover;
-        outline: 1px solid white;
+        outline: 1px solid #fff;
         outline-offset: -1px;
         border-radius: 10px;
+        opacity: 80%;
     }
+
+    img:hover {
+        background: #333;
+        opacity: 100%;
+    }
+
+    .photoArea {
+        background: linear-gradient(#444 80%, #222, #000, #333);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 165px;
+            height: 165px;
+            object-fit: cover;
+            outline: 1px solid #666;
+            outline-offset: -1px;
+            border-radius: 10px;
+            opacity: 80%;
+        }
+
+        img:hover {
+            background: #333;
+            opacity: 100%;
+        }
+
+        p {
+            color: #ccc;
+        }
+    }   
 }
 
 .bottom-images img {
@@ -519,9 +553,12 @@ footer {
     }
 
     .photoGallery {
-        img {
-            width: 140px;
-            height: 140px;
+        .photoArea {
+
+            img {
+                width: 140px;
+                height: 140px;
+            }
         }
     }
 }
