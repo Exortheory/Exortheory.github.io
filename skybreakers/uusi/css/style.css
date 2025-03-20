@@ -173,15 +173,27 @@ main {
     max-inline-size: var(--wrapper-size);
     margin-inline: auto;
     padding-inline: 1rem;
-    padding-bottom: 56px;
+    padding-bottom: 100px;
 
-    #content-sky {
-        display: block;
-    }
+    .back_button {
+        display: flex;
+        justify-content: center;
 
-    #content-ben {
-        display: none;
+        button {
+            color: #999;
+            font-weight: bold;
+            padding: 10px;
+            background: linear-gradient(#222, #333);
+            border-radius: 10px;
+            border-color: #444;
+        }
+
+        button:hover {
+            background: linear-gradient(#333, #444);
+            border-color: #555;
+        }
     }
+    
 }
 
 .wrapper h1 {
@@ -228,12 +240,6 @@ main {
     display: flex;
     justify-content: left;
 
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
     h2::before {
         left: 0;
         display: block;
@@ -261,9 +267,12 @@ main {
         flex: 0 0 205px;
 
         img {
+            width: 100%;
+            height: auto;
             max-width: 100%;
             outline: 1px solid white;
             outline-offset: -1px;
+            border-radius: 10px;
         }
     }
 
@@ -346,6 +355,22 @@ main {
             justify-content: center;
             gap: 20px;
         }
+    }
+}
+
+.photoGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+
+    img {
+        width: 165px;
+        height: 165px;
+        object-fit: cover;
+        outline: 1px solid white;
+        outline-offset: -1px;
+        border-radius: 10px;
     }
 }
 
