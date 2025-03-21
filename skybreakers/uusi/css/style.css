@@ -230,16 +230,17 @@ main {
 }
 
 .wrapper p {
-    padding: 10px 10px 10px 10px
+    padding: 0 10px 0 10px;
 }
 
 .wrapper section {
     position: relative;
     max-width: 100%;
-    margin: 10px;
+    margin: 10px 0;
     padding: 20px;
     display: flex;
     justify-content: left;
+
 
     h2::before {
         position: relative;
@@ -291,7 +292,7 @@ main {
 
     .textBox {
         width: 100%;
-        margin: 0 0 0 0;
+        padding-bottom: 10px;
 
         h2 {
             font-size: 18px;
@@ -354,6 +355,16 @@ main {
             gap: 20px;
         }
     }
+}
+
+.bg-color-one {
+    background: #111;
+    border-radius: 10px;
+}
+
+.bg-color-two {
+    background: #222;
+    border-radius: 10px;
 }
 
 .photoGallery {
