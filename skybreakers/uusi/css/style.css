@@ -180,6 +180,7 @@ main {
         justify-content: center;
 
         button {
+            cursor: pointer;
             color: #999;
             font-weight: bold;
             padding: 10px;
@@ -197,7 +198,7 @@ main {
 }
 
 .wrapper h1 {
-    padding: 40px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
     font-size: 20px;
 
     &::before {
@@ -241,9 +242,9 @@ main {
     justify-content: left;
 
     h2::before {
+        position: relative;
         left: 0;
         display: block;
-        position: relative;
         width: 100%;
         height: 3px;
         margin-bottom: 7px;
@@ -265,6 +266,7 @@ main {
     .imgBox {
         max-width: 205px;
         flex: 0 0 205px;
+        margin-right: 15px;
 
         img {
             width: 100%;
@@ -289,15 +291,11 @@ main {
 
     .textBox {
         width: 100%;
-        margin: 10px 20px 10px 20px;
-
-        p {
-            padding-bottom: 20px;
-        }
+        margin: 0 0 0 0;
 
         h2 {
             font-size: 18px;
-            padding: 10px 0;
+            padding: 10px;
         }
             
         h3 {
@@ -537,6 +535,7 @@ footer {
 
         .imgBox {
             max-width: 100%;
+            margin-right: 0;
         }
 
         .textBox {
