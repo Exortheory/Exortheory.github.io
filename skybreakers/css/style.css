@@ -18,57 +18,79 @@
 
 body {
     min-height: 100vh;
-    background: url(../images/bg.jpg) no-repeat;
     background: #000;
-    background-size: cover;
-    background-position: center;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 30px;
+    text-align: center;
 
-    .button-new {
-        color: #eeeeee;
-        background: #660000;
-        border-radius: 15px;
-        padding: 10px 20px 10px 20px;
-        border: 3px solid #990000;
+    .area-new {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .button-new {
+            position: relative;
+            color: #eeeeee;
+            background: linear-gradient(#330000, #110000, #330000);
+            border-radius: 1em;
+            padding: 20px 20px 20px 20px;
+
+            &:hover {
+                background: linear-gradient(#990000, #330000, #990000);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: -3px;
+                border-radius: 1em;
+                z-index: -1;
+                background: linear-gradient(to right, #660000, #99000000, #660000);
+            }
+        }
     }
 
-    .button-old {
-        color: #eeeeee;
-        background: #330000;
-        border-radius: 15px;
-        padding: 10px 20px 10px 20px;
-        border: 3px solid #660000;
-        opacity: 60%;
+    .area-old {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .button-old {
+            position: relative;
+            color: #eeeeee;
+            background: linear-gradient(#111111, #000000, #111111);
+            border-radius: 15px;
+            padding: 20px 20px 20px 20px;
+
+            &:hover {
+                background: linear-gradient(#333333, #000000, #333333);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                inset: -3px;
+                border-radius: 1em;
+                z-index: -1;
+                background: linear-gradient(to right, #333333, #99000000, #333333);
+            }
+        }
     }
 
-    .button-new:hover {
-        background: #990000;
-    }
-
-    .button-old:hover {
-        background: #660000;
-        opacity: 100%;
-    }
-
-    .button p:first-child {
-        font-size: 16px;
+    .button-new, .button-old {
+        font-size: 14px;
         font-weight: bold;
     }
 
