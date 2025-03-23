@@ -21,6 +21,7 @@
 }
 
 body {
+    position: relative;
     min-height: 100vh;
     background: url(../images/bg.jpg) no-repeat;
     background: #000;
@@ -32,6 +33,7 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #eeeeee;
+    box-sizing: inherit;
 }
 
 header {
@@ -176,33 +178,28 @@ main {
 }
 
 .wrapper {
-    position: absolute;
-    top: 63px;
+    padding-top: 63px;
     max-inline-size: var(--wrapper-size);
     margin-inline: auto;
     padding-inline: 1rem;
     padding-bottom: 100px;
 
-    .back_button {
+    .backup-button {
         display: flex;
         justify-content: center;
+        gap: 10px;
 
-        button {
+        img {
+            width: 40px;
             cursor: pointer;
-            color: #999;
-            font-weight: bold;
-            padding: 10px;
-            background: linear-gradient(#222, #333);
-            border-radius: 10px;
-            border-color: #444;
+            filter: invert(40%);
         }
 
-        button:hover {
-            background: linear-gradient(#333, #444);
-            border-color: #555;
+        img:hover {
+            border-radius: 0.5rem;
+            filter: invert(100%);
         }
     }
-    
 }
 
 .wrapper h1 {
@@ -217,7 +214,7 @@ main {
         height: 3px;
         margin-bottom: 7px;
         content: "";
-        background: linear-gradient(to right, #444, #222);;
+        background: linear-gradient(to right, #444, #111);;
     }
 
     &::after {
@@ -228,7 +225,7 @@ main {
         height: 3px;
         margin-top: 7px;
         content: "";
-        background: linear-gradient(to right, #444, #222);;
+        background: linear-gradient(to right, #444, #111);;
     }
 }
 
@@ -242,7 +239,6 @@ main {
 }
 
 .wrapper section {
-    position: relative;
     max-width: 100%;
     margin: 10px 0;
     padding: 1.25rem;
@@ -259,7 +255,7 @@ main {
         height: 3px;
         margin-bottom: 7px;
         content: "";
-        background: linear-gradient(to right, #444, #222);
+        background: linear-gradient(to right, #444, #111);
     }
 
     h2::after {
@@ -270,7 +266,7 @@ main {
         height: 3px;
         margin-top: 7px;
         content: "";
-        background: linear-gradient(to right, #444, #222);;
+        background: linear-gradient(to right, #444, #111);;
     }
 
     .imgBox {
@@ -371,17 +367,17 @@ main {
 }
 
 .bg-color-one {
-    background: linear-gradient(#222, #111, #222);
+    background: linear-gradient(#222, #111);
     border-radius: 10px;
 }
 
 .bg-color-two {
-    background: linear-gradient(#222, #111, #222);
+    background: linear-gradient(#111, #111);
     border-radius: 10px;
 }
 
 .bg-color-three {
-    background: linear-gradient(#222, #111, #222);
+    background: linear-gradient(#111, #222);
     border-radius: 10px;
 }
 
@@ -432,9 +428,7 @@ main {
     }   
 }
 
-.bottom-images img {
-    padding: 20px;
-}
+
 
 
 
@@ -459,19 +453,23 @@ main {
 
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
     background: linear-gradient(#222, #333);
     color: #999;
     padding: 10px;
     font-size: small;
 
+    .footer-text {
+        text-align: center;
+    }
 
     p:first-child {
         font-size: 18px;
