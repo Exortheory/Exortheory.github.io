@@ -8,9 +8,16 @@
 /* to use variables: use var(--example-variable) */
 
 :root {
-    --example-variable: 666px;
+    --size-10px: 0.625rem;
+    --size-14px: 0.875rem;
+    --size-15px: 0.938rem;
+    --size-16px: 1rem;
+    --size-20px: 1.25rem;
+    --size-24px: 1.5rem;
+    --size-26px: 1.625rem;
+    --size-200px: 12.5rem;
 
-    --wrapper-size: 800px;
+    --wrapper-size: 50rem;
 }
 
 body {
@@ -20,7 +27,7 @@ body {
     background-size: cover;
     background-position: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -34,7 +41,7 @@ header {
     right: 0;
     background: linear-gradient(#550000, #880000);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-    padding: 10px 7%;
+    padding: 0.625rem 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +56,7 @@ header .logo {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 26px;
+    font-size: 1.625rem;
     color: #fff;
     text-shadow: 2px 2px 0 #000;
 }
@@ -60,12 +67,12 @@ header .navbar ul {
 
 header .navbar ul li {
     position: relative;
-    float: right;
+    float: left;
 }
 
 header .navbar ul li a {
-    font-size: 15px;
-    padding: 10px 20px 10px 20px;
+    font-size: 0.938rem;
+    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
     color: #eee;
     display: block;
 }
@@ -73,17 +80,17 @@ header .navbar ul li a {
 header .navbar ul li:hover > a {
     background: linear-gradient(#111, #333);
     color: #ffffff;
-    border-radius: 0 20px 0 20px;
+    border-radius: 0 1.25rem 0 1.25rem;
     box-shadow: 0 0 10px #00000050;
 }
 
 header .navbar ul li ul {
     position: absolute;
     left: 0;
-    width: 200px;
+    width: 12.5rem;
     background: linear-gradient(#111, #333);
     display: none;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     z-index: 2;
 }
 
@@ -103,13 +110,13 @@ header .navbar ul li ul li:hover > a{
 }
 
 header .navbar ul li ul li:first-child:hover > a{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
 }
 
 header .navbar ul li ul li:last-child:hover > a{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
 }
 
 header .navbar ul li ul li:last-child {
@@ -117,7 +124,7 @@ header .navbar ul li ul li:last-child {
 }
 
 header .navbar ul li ul li ul {
-    left: 200px;
+    left: 12.5rem;
     top: 0;
 }
 
@@ -133,7 +140,7 @@ header .navbar ul li:hover > ul {
 header .flag {
     img {
         outline: none;
-        width: 26px;
+        width: 1.625rem;
         opacity: 50%;
     }
         
@@ -199,8 +206,8 @@ main {
 }
 
 .wrapper h1 {
-    padding: 20px 10px 20px 10px;
-    font-size: 20px;
+    padding: 1.25rem 0.625rem 1.25rem 0.625rem;
+    font-size: 1.25rem;
 
     &::before {
         left: 0;
@@ -226,7 +233,7 @@ main {
 }
 
 .wrapper > h2 {
-    padding: 40px 10px 20px 10px;
+    padding: 40px 10px 1.25rem 10px;
     text-align: center;
 }
 
@@ -238,7 +245,7 @@ main {
     position: relative;
     max-width: 100%;
     margin: 10px 0;
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     justify-content: left;
     gap: 10px;
@@ -285,7 +292,7 @@ main {
         justify-content: center;
 
         img {
-            min-width: 200px;
+            min-width: 12.5rem;
             height: auto;
             max-width: 100%;
         }
@@ -306,7 +313,7 @@ main {
         }
     
         ul {
-            padding-left: 20px;
+            padding-left: 1.25rem;
             padding-bottom: 15px;
 
             li {
