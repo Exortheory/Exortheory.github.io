@@ -301,12 +301,17 @@ main {
         }
             
         h3 {
+            padding-left: 15px;
             padding-bottom: 15px;
         }
     
         ul {
             padding-left: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 15px;
+
+            li {
+                margin-left: 12px;
+            }
         }
     }
 
