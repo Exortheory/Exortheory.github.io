@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 /* font-family: 'Roboto', sans-serif; */
 
@@ -73,7 +74,11 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-    font-size: 0.938rem;
+    font-size: 1rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     padding: 0.625rem 1.25rem 0.625rem 1.25rem;
     color: #eee;
     display: block;
@@ -161,11 +166,6 @@ header label {
         outline: none;
         width: 30px;
         filter: invert(100%);
-        opacity: 60%;
-    }
-
-    img:hover {
-        opacity: 100%;
     }
 }
 
@@ -232,6 +232,33 @@ main {
 .wrapper > h2 {
     padding: 40px 10px 1.25rem 10px;
     text-align: center;
+}
+
+.wrapper > h3 {
+    text-align: center;
+    padding: 20px 0;
+
+    &::before {
+        position: relative;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 7px;
+        content: "";
+        background: linear-gradient(to right, #111, #444, #111);
+    }
+
+    &::after {
+        position: relative;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin-top: 7px;
+        content: "";
+        background: linear-gradient(to right, #111, #444, #111);;
+    }
 }
 
 .wrapper p {
@@ -384,6 +411,7 @@ main {
 .photoGallery {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     gap: 5px;
     justify-content: center;
 
@@ -428,7 +456,49 @@ main {
     }   
 }
 
+.photoLinks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
 
+    img {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+.photoTeam {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+
+    .photoTeamArea {
+        background: linear-gradient(#444 80%, #222, #000, #333);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            outline: 1px solid #666;
+            outline-offset: -1px;
+            border-radius: 10px;
+        }
+
+        p {
+            padding: 5px 0;
+            color: #ccc;
+        }
+    }
+}
 
 
 
