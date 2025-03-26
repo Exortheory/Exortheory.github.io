@@ -161,7 +161,6 @@ header label {
     color: #eee;
     cursor: pointer;
     display: none;
-    filter: invert(100%);
 
     img {
         outline: none;
@@ -177,14 +176,15 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label{
-    background:url('../images/icon_menu.png') no-repeat;
+    background:url('../images/icon_menu.svg') no-repeat;
     background-size: 100% 100%;
     height: 30px;
     width: 30px;
+    filter: grayscale(0);
 }
 
 input[type="checkbox"]:checked + label{
-    background:url('../images/icon_close.png') no-repeat;
+    background:url('../images/icon_close.svg') no-repeat;
     background-size: 100% 100%;
     height: 30px;
     width: 30px;
