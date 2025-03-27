@@ -53,7 +53,6 @@ h1 {
 
 header {
     grid-area: header;
-    background: linear-gradient(to top, rgba(30,0,120,1), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
     color: white;
     z-index: 1;
 }
@@ -73,18 +72,18 @@ ul {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: linear-gradient(to top, rgba(30,0,120,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(30,0,120,1));
-    border-top: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
+    background: linear-gradient(#777, #888, #777);
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
     max-width: 1080px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 li {
     float: left;
-    border-right:1px solid rgba(0,0,0,1);
+    background: linear-gradient(#777, #888, #777);
+    border-right:1px solid #999;
 }
 
 li:last-child {
@@ -100,13 +99,12 @@ li a{
 }
 
 li a:hover {
-    background: linear-gradient(to top, rgba(0,0,0,1), rgba(30,0,120,1), rgba(60,0,150,1));
+    background: linear-gradient(#999, #444, #999);
     color: white;
-    outline: 1px solid rgba(0,0,0,1);
 }
 
 li a.active {
-    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,1), rgba(255,145,0,1));
+    background: linear-gradient(#999, #999);
     color: white;
 }
 
@@ -117,7 +115,6 @@ li a.active {
 main {
     grid-area: content;
     position: relative;
-    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
     color: #aaa;
     z-index: 1;
     border-bottom-left-radius: 20px;
@@ -137,7 +134,7 @@ main {
             z-index: 0;
             width: 100%;
             height: 3px;
-            background: rgb(60, 0, 140);
+            background: #777;
         }
 
         &::after {
@@ -147,7 +144,7 @@ main {
             bottom: 15px;
             width: 100%;
             height: 3px;
-            background: rgba(60,0,140,1);
+            background: #777;
         }
     }
 
@@ -188,5 +185,14 @@ footer {
 
     .grid-container {
         grid-template-columns: auto 100% auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+
+        ul li {
+            width: 100%;
+        }
     }
 }
