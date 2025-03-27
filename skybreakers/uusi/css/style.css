@@ -24,10 +24,7 @@
 body {
     position: relative;
     min-height: 100vh;
-    background: url(../images/bg.jpg) no-repeat;
     background: #000;
-    background-size: cover;
-    background-position: center;
     font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
     font-optical-sizing: auto;
@@ -35,6 +32,17 @@ body {
     font-style: normal;
     color: #eeeeee;
     box-sizing: inherit;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url(..//images/bg_square.png);
+        filter: opacity(60%);
+        mask-image: linear-gradient(to top, #0000 95%, #000);
+    }
 }
 
 header {
@@ -293,7 +301,6 @@ main {
     display: flex;
     justify-content: left;
     gap: 10px;
-
 
     h2::before {
         position: relative;
