@@ -53,7 +53,7 @@ h1 {
 
 header {
     grid-area: header;
-    background: linear-gradient(to top, rgba(30,0,120,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1));
+    background: linear-gradient(to top, rgba(30,0,120,1), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
     color: white;
     z-index: 1;
 }
@@ -74,17 +74,17 @@ ul {
     margin: 0;
     box-sizing: border-box;
     background: linear-gradient(to top, rgba(30,0,120,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(30,0,120,1));
-    border-top: 1px solid rgb(60, 0, 140);
-    border-left: 1px solid rgb(30, 0, 120);
-    border-right: 1px solid rgb(30, 0, 120);
-    border-bottom: 1px solid rgb(40, 0, 130);
+    border-top: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
     max-width: 1080px;
     margin: 0 auto;
 }
 
 li {
     float: left;
-    border-right:1px solid rgba(30,0,120,1);
+    border-right:1px solid rgba(0,0,0,1);
 }
 
 li:last-child {
@@ -100,17 +100,14 @@ li a{
 }
 
 li a:hover {
-    background: linear-gradient(to top, rgba(40,0,130,1), rgba(30,0,120,1), rgba(60,0,150,1));
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(30,0,120,1), rgba(60,0,150,1));
     color: white;
-    outline: 1px solid rgba(40,0,130,1);
-    outline-offset: -1px;
+    outline: 1px solid rgba(0,0,0,1);
 }
 
 li a.active {
-    background: linear-gradient(to top, rgba(40,0,130,1), rgba(30,0,120,1), rgba(255,145,0,1));
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,1), rgba(255,145,0,1));
     color: white;
-    outline: 1px solid rgba(40,0,130,1);
-    outline-offset: -1px;
 }
 
 .left {
@@ -120,9 +117,11 @@ li a.active {
 main {
     grid-area: content;
     position: relative;
-    background: linear-gradient(rgba(40,0,130,1), rgba(30,0,120,1));
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
     color: #aaa;
     z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     h2 {
         position: relative;
@@ -171,9 +170,9 @@ main {
 
 footer {
     grid-area: footer;
-    background: linear-gradient(rgba(40,0,130,1), rgba(30,0,120,1));
     text-align: center;
     z-index: 1;
+    padding: 20px;
 
     p {
         color: rgba(90,0,180,1);
