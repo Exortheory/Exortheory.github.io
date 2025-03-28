@@ -116,8 +116,20 @@ main {
     position: relative;
     color: #aaa;
     z-index: 1;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 10px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(-45deg, transparent 49%, #333 50%, transparent 51%);
+        background-size: 5px 5px;
+        border-radius: 10px;
+        z-index: -1;
+        opacity: 60%;
+    }
 
     h2 {
         position: relative;
