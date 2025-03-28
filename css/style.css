@@ -72,9 +72,9 @@ ul {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: linear-gradient(#777, #888, #777);
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+    background: linear-gradient(#111, #222, #333);
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
     max-width: 1080px;
     margin: 0 auto;
     border-radius: 10px;
@@ -82,8 +82,7 @@ ul {
 
 li {
     float: left;
-    background: linear-gradient(#777, #888, #777);
-    border-right:1px solid #999;
+    border-right:1px solid #333;
 }
 
 li:last-child {
@@ -99,12 +98,12 @@ li a{
 }
 
 li a:hover {
-    background: linear-gradient(#999, #444, #999);
+    background: linear-gradient(#333, #222, #111);
     color: white;
 }
 
 li a.active {
-    background: linear-gradient(#999, #999);
+    background: linear-gradient(#333, #333);
     color: white;
 }
 
@@ -122,7 +121,7 @@ main {
 
     h2 {
         position: relative;
-        color: rgb(255, 145, 0);
+        color: #22ffc8;
         padding-bottom: 15px;
 
 
@@ -134,7 +133,7 @@ main {
             z-index: 0;
             width: 100%;
             height: 3px;
-            background: #777;
+            background: linear-gradient(#111, #333);
         }
 
         &::after {
@@ -144,7 +143,7 @@ main {
             bottom: 15px;
             width: 100%;
             height: 3px;
-            background: #777;
+            background: linear-gradient(#111, #333);
         }
     }
 
