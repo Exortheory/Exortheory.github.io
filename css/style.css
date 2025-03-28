@@ -95,6 +95,7 @@ li a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: 2s ease;
 }
 
 li a:hover {
@@ -117,7 +118,6 @@ main {
     color: #aaa;
     z-index: 1;
     border-radius: 10px;
-
     position: relative;
 
     &::before {

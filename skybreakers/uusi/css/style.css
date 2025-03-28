@@ -39,7 +39,7 @@ body {
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url(..//images/bg_square.png);
+        background-image: url(../);
         filter: opacity(60%);
         mask-image: linear-gradient(to top, #0000 95%, #000);
     }
