@@ -34,15 +34,6 @@ body {
     box-sizing: inherit;
 
     position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-image: url(../);
-        filter: opacity(60%);
-        mask-image: linear-gradient(to top, #0000 95%, #000);
-    }
 }
 
 header {
