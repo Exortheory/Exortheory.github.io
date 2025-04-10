@@ -282,7 +282,8 @@ main {
 }
 
 .wrapper p {
-    padding: 0 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
+    line-height: 1.35rem;
 }
 
 .wrapper section {
@@ -290,8 +291,12 @@ main {
     margin: 10px 0;
     padding: 1.25rem;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     gap: 10px;
+
+    p {
+        padding: 0 10px 20px 10px;
+    }
 
     h2::before {
         position: relative;
@@ -365,7 +370,6 @@ main {
     }
 
     .textBoxAlone {
-        width: 100%;
         text-align: center;
 
         p {
@@ -398,6 +402,8 @@ main {
 
         a {
             color: #ccc;
+            text-decoration: none;
+            font-size: 18px;
         }
 
         a:hover {
@@ -413,17 +419,22 @@ main {
 }
 
 .bg-color-one {
-    background: linear-gradient(#222, #111);
+    background: linear-gradient(#222, #000);
     border-radius: 10px;
 }
 
 .bg-color-two {
-    background: linear-gradient(#111, #111);
+    background: linear-gradient(#000, #000);
     border-radius: 10px;
 }
 
 .bg-color-three {
-    background: linear-gradient(#111, #222);
+    background: linear-gradient(#000, #111);
+    border-radius: 10px;
+}
+
+.bg-color-four {
+    background: linear-gradient(#222, #111, #111);
     border-radius: 10px;
 }
 
