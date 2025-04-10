@@ -18,7 +18,7 @@
     --size-26px: 1.625rem;
     --size-200px: 12.5rem;
 
-    --wrapper-size: 50rem;
+    --wrapper-size: 70rem; /* 50rem = 800px, 70rem = 1120px */
 }
 
 body {
@@ -419,17 +419,17 @@ main {
 }
 
 .bg-color-one {
-    background: linear-gradient(#222, #000);
+    background: linear-gradient(#222, #111);
     border-radius: 10px;
 }
 
 .bg-color-two {
-    background: linear-gradient(#000, #000);
+    background: linear-gradient(#111, #111);
     border-radius: 10px;
 }
 
 .bg-color-three {
-    background: linear-gradient(#000, #111);
+    background: linear-gradient(#111, #222);
     border-radius: 10px;
 }
 
